@@ -1,0 +1,409 @@
+.leaderboard {
+  width: 100%;
+  position: relative;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Decorative elements */
+.decorativeElements {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.decorativeShape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.25;
+}
+
+.shape1 {
+  width: 300px;
+  height: 300px;
+  background-color: #0070f3;
+  top: -100px;
+  left: -100px;
+}
+
+.shape2 {
+  width: 200px;
+  height: 200px;
+  background-color: #ff9800;
+  bottom: -50px;
+  right: -50px;
+}
+
+.shape3 {
+  width: 150px;
+  height: 150px;
+  background-color: #4caf50;
+  top: 50%;
+  left: 10%;
+}
+
+.shape4 {
+  width: 100px;
+  height: 100px;
+  background-color: #f44336;
+  top: 30%;
+  right: 10%;
+}
+
+.decorativeTrophy {
+  position: absolute;
+  font-size: 6rem;
+  opacity: 0.8;
+}
+
+.trophy1 {
+  top: 20%;
+  left: 5%;
+}
+
+.trophy2 {
+  bottom: 15%;
+  right: 5%;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #0070f3;
+  margin: 0;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Top 3 Section */
+.topThreeSection {
+  margin-bottom: 2rem;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.podiumPosition {
+  flex: 1;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topCard {
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.topCard:hover {
+  transform: translateY(-5px);
+}
+
+.winnerCard {
+  background: linear-gradient(135deg, #fff8e1, #fff);
+  border: 2px solid #ffd700;
+  padding-top: 2rem;
+}
+
+.crownContainer {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.crownIcon {
+  font-size: 2rem;
+}
+
+.topCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileContainer {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.positionBadge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.position1 {
+  background-color: #ffd700; /* Gold */
+}
+
+.position2 {
+  background-color: #c0c0c0; /* Silver */
+}
+
+.position3 {
+  background-color: #cd7f32; /* Bronze */
+}
+
+.userInfo {
+  text-align: center;
+  width: 100%;
+}
+
+.userName {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pointsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.trophyIcon {
+  font-size: 0.9rem;
+}
+
+.points {
+  font-weight: bold;
+  color: #0070f3;
+}
+
+/* Remaining Users */
+.remainingUsers {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.userRow {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.userRow:last-child {
+  border-bottom: none;
+}
+
+.userRow:hover {
+  background-color: #f9f9f9;
+}
+
+.rankNumber {
+  width: 30px;
+  font-weight: bold;
+  color: #666;
+}
+
+.userNameRow {
+  flex: 1;
+  margin: 0 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userPointsRow {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Profile Images */
+.profileImageContainer {
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileImageLarge {
+  width: 80px;
+  height: 80px;
+}
+
+.profileImageMedium {
+  width: 60px;
+  height: 60px;
+}
+
+.profileImageSmall {
+  width: 40px;
+  height: 40px;
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.noImage {
+  font-size: 1.5rem;
+  color: #999;
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.3;
+}
+
+.emptyTitle {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #333;
+}
+
+.emptySubtitle {
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Pagination Styles */
+.pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 0.75rem;
+    padding: 2rem 0;
+}
+
+.paginationButton {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  color: #444;
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 120px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.paginationButton:hover:not(:disabled) {
+  background-color: #0070f3;
+  border-color: #0070f3;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 112, 243, 0.15);
+}
+
+.paginationButton:active:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 112, 243, 0.1);
+}
+
+.paginationButton:disabled {
+  background-color: #f5f5f5;
+  border-color: #eaeaea;
+  color: #bbb;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+  opacity: 0.8;
+}
+
+.pageInfo {
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  min-width: 100px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .podium {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .podiumPosition {
+    order: 2;
+    margin-bottom: 1rem;
+  }
+  
+  .podiumPosition:nth-child(2) {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+  
+  .topCard {
+    max-width: 250px;
+  }
+}
